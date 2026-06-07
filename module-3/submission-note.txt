@@ -1,0 +1,43 @@
+DMP #3 — Digital Storytelling
+Chasity N. Madewell
+
+MY DIGITAL STORY
+"Ruby's Big Delivery: A Red Blood Cell's Journey Through the Body" — a six-scene
+animated digital story that follows Ruby, a red blood cell, on one full loop of the
+circulatory system: the right heart, the lungs (where she trades carbon dioxide for
+oxygen and turns from violet to bright red), the powerful left heart, the branching
+arteries, a capillary delivery at a hard-working muscle, and the trip home through the
+veins. Each scene pairs the story with a short "Science note" so it works as a real
+lesson, not just a cartoon.
+
+HOW TO VIEW IT
+Open the attached file "index.html" in any web browser (Chrome works best), then press
+"Begin the Journey." Use the Next/Back buttons or the arrow keys to move through the six
+scenes. Turn sound ON for the heartbeat, the "whoosh" of the pumping heart, and a
+read-aloud narration of each page. Watch Ruby's color change as she picks up and drops
+off oxygen, and watch the oxygen meter rise and fall with her.
+
+EXPLORING THE PLATFORMS (the fun part)
+Since the focus of this project was exploring digital storytelling tools, I test-drove
+several from the list before deciding how to build:
+- Book Creator — clean and genuinely easy; great for a printable/flip e-book, but the
+  free version caps you at a few books and the animation is limited.
+- Adobe Express (Spark) — beautiful templates and slick video stories, but the best
+  motion and voiceover features sit behind the paid tier.
+- Storyboard That — perfect for a quick comic-strip storyboard; I actually used it to
+  rough out Ruby's six "panels" before building.
+- Storybird & Animoto — lovely for art-first and photo/video stories respectively, but
+  harder to bend to a science topic with custom characters.
+
+I decided to build my story as a lightweight, self-contained web app (HTML, CSS, and
+JavaScript are themselves a digital storytelling platform) so I could fully control the
+animation, the color change that teaches gas exchange, the synced heartbeat sound, and
+the read-aloud narration — with no account or paywall, and nothing for a student to
+install.
+
+WHY THIS ONE
+I teach 7th-grade life science, so I built something I can actually use Monday. Ruby's
+journey doubles as a multimodal digital text for our body-systems unit, and making it
+was the best way to feel — as a creator, not just a viewer — exactly what this module's
+readings argue: that digital storytelling is about choices in image, motion, sound, and
+text working together to make meaning. It was, as promised, fun.
