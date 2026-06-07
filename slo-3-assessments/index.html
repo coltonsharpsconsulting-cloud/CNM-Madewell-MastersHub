@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SLO 3 Assessment Suite — Cells: The Building Blocks of Life</title>
+<meta name="description" content="Diagnostic, formative, summative, and authentic assessments for a 7th-grade life science cells unit, with differentiation. SED 510 SLO 3 artifact — Chasity N. Madewell." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1f2a2e; --ink-soft:#4b5b60; --paper:#fbfaf6; --card:#ffffff;
+    --teal:#0f766e; --teal-deep:#0b5750; --teal-tint:#e6f4f1; --teal-line:#bfe3dc;
+    --gold:#b8842b; --gold-tint:#fbf2dd;
+    --rule:#e4e1d6; --shadow:0 14px 34px -20px rgba(15,60,55,.45);
+    --display:"Fraunces",Georgia,serif; --body:"Nunito Sans",system-ui,-apple-system,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; scroll-padding-top:84px}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.6;
+       -webkit-font-smoothing:antialiased}
+  .wrap{max-width:920px;margin:0 auto;padding:0 clamp(1rem,4vw,2.2rem)}
+
+  /* header */
+  header.masthead{
+    background:linear-gradient(150deg,var(--teal-deep),var(--teal) 70%);color:#eafdf9;
+    padding:clamp(2rem,5vw,3.4rem) 0 clamp(1.6rem,4vw,2.6rem);position:relative;overflow:hidden;
+  }
+  header.masthead::after{content:"";position:absolute;right:-60px;top:-60px;width:280px;height:280px;border-radius:50%;
+    background:radial-gradient(circle at 40% 40%,rgba(255,255,255,.16),transparent 60%);}
+  .kicker{font-weight:800;letter-spacing:.22em;text-transform:uppercase;font-size:.72rem;color:#a9ede1}
+  header.masthead h1{font-family:var(--display);font-weight:900;font-size:clamp(1.9rem,5vw,3rem);
+    line-height:1.02;margin:.5rem 0 .3rem;font-optical-sizing:auto}
+  header.masthead h1 em{font-style:italic;color:#ffe6b3}
+  .byline{font-size:.98rem;opacity:.94;font-weight:600}
+  .standards{margin-top:1rem;font-size:.82rem;background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:.7rem .9rem;display:inline-block;max-width:100%}
+  .standards b{color:#ffe6b3}
+
+  /* contents nav */
+  nav.toc{position:sticky;top:0;z-index:10;background:rgba(251,250,246,.92);backdrop-filter:saturate(1.2);
+    border-bottom:1px solid var(--rule)}
+  nav.toc .wrap{display:flex;gap:.4rem;flex-wrap:wrap;padding-top:.6rem;padding-bottom:.6rem;align-items:center}
+  nav.toc a{font-weight:700;font-size:.82rem;color:var(--teal-deep);text-decoration:none;
+    padding:.34rem .7rem;border-radius:999px;border:1px solid var(--teal-line);background:var(--teal-tint);transition:.15s}
+  nav.toc a:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+  nav.toc .lead{font-weight:800;color:var(--ink-soft);font-size:.74rem;text-transform:uppercase;letter-spacing:.12em;margin-right:.2rem}
+
+  .intro{padding:1.6rem 0 .4rem}
+  .intro p{color:var(--ink-soft);max-width:64ch}
+  .note{font-size:.82rem;color:var(--ink-soft);background:var(--gold-tint);border-left:4px solid var(--gold);
+    border-radius:0 10px 10px 0;padding:.7rem .9rem;margin:1rem 0}
+
+  /* assessment sections */
+  section.assess{padding:2.2rem 0 1rem;border-top:1px solid var(--rule);margin-top:1.4rem}
+  .a-head{display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap}
+  .badge{font-family:var(--body);font-weight:800;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#fff;background:var(--teal);padding:.28rem .6rem;border-radius:6px;white-space:nowrap}
+  .badge.diag{background:#2563eb}.badge.form{background:#0f766e}.badge.summ{background:#7c3a9a}.badge.auth{background:#b8842b}
+  section.assess h2{font-family:var(--display);font-weight:900;font-size:clamp(1.4rem,3.6vw,2rem);margin:.1rem 0;color:var(--ink)}
+  .meta{font-size:.86rem;color:var(--ink-soft);margin:.5rem 0 0}
+  .meta b{color:var(--teal-deep)}
+  .align{font-size:.8rem;color:var(--ink-soft);margin:.35rem 0 1rem;padding:.5rem .8rem;background:#f1f4f1;border-radius:8px}
+
+  .panel{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:1.1rem 1.3rem;margin:1rem 0;box-shadow:var(--shadow)}
+  .panel h3{font-family:var(--body);font-weight:800;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--teal-deep);margin:.1rem 0 .7rem;display:flex;align-items:center;gap:.5rem}
+  .panel h3::before{content:"";width:18px;height:3px;border-radius:2px;background:var(--teal)}
+  ol,ul{margin:.4rem 0 .4rem;padding-left:1.3rem}
+  li{margin:.34rem 0}
+  .q{margin:.7rem 0;padding-left:.2rem}
+  .q .stem{font-weight:700}
+  .choices{list-style:none;padding-left:.2rem;margin:.3rem 0}
+  .choices li{margin:.18rem 0}
+  .choices li::before{content:attr(data-l)") ";font-weight:800;color:var(--teal-deep);margin-right:.3rem}
+  .frame{font-family:var(--body);background:#f6f8f7;border:1px dashed var(--teal-line);border-radius:8px;
+    padding:.45rem .7rem;margin:.4rem 0;font-style:italic;color:var(--ink-soft)}
+  .key{background:var(--teal-tint);border:1px solid var(--teal-line);border-radius:12px;padding:.9rem 1.1rem;margin:1rem 0}
+  .key h3{color:var(--teal-deep)}
+  .diff{background:#fff8ec;border:1px solid #f0dcb0;border-radius:12px;padding:.9rem 1.1rem;margin:1rem 0}
+  .diff h3{color:var(--gold)}
+  .diff h3::before{background:var(--gold)}
+  .diff dl{margin:.2rem 0}
+  .diff dt{font-weight:800;color:#8a6420;margin-top:.5rem}
+  .diff dd{margin:.1rem 0 0 0}
+
+  table{border-collapse:collapse;width:100%;margin:.6rem 0;font-size:.86rem}
+  th,td{border:1px solid var(--rule);padding:.5rem .6rem;text-align:left;vertical-align:top}
+  th{background:var(--teal-tint);color:var(--teal-deep);font-weight:800;font-size:.78rem}
+  td.lv{font-weight:800;color:var(--teal-deep);white-space:nowrap;background:#f7faf9}
+
+  footer{margin:3rem 0 2rem;padding-top:1.2rem;border-top:1px solid var(--rule);font-size:.8rem;color:var(--ink-soft)}
+
+  @media print{
+    nav.toc{display:none} header.masthead{color:#08312c;background:#fff;border-bottom:2px solid var(--teal)}
+    header.masthead h1 em{color:var(--gold)} .panel,.key,.diff{box-shadow:none}
+    section.assess{break-inside:avoid-page} body{background:#fff}
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">SED 510 · General Methods · SLO 3 Artifact</p>
+    <h1>Assessment Suite — <em>Cells: The Building Blocks of Life</em></h1>
+    <p class="byline">Chasity N. Madewell · 7th-Grade Life Science · American Leadership Academy</p>
+    <div class="standards"><b>Aligned to:</b> AZ Science Standard 7.L1U1.6 · NGSS MS-LS1-1, MS-LS1-2, MS-LS1-3 — and the unit objectives from my SLO 2 Backward Design.</div>
+  </div>
+</header>
+
+<nav class="toc"><div class="wrap">
+  <span class="lead">Assessments</span>
+  <a href="#diagnostic">Diagnostic</a>
+  <a href="#formative">Formative</a>
+  <a href="#summative">Summative</a>
+  <a href="#authentic">Authentic</a>
+</div></nav>
+
+<div class="wrap">
+  <div class="intro">
+    <p>This suite contains four aligned assessments for my three-week cells unit — a <b>diagnostic</b> to surface prior knowledge and misconceptions, a <b>formative</b> check to drive in-the-moment intervention, a <b>summative</b> assessment of the unit objectives, and an <b>authentic</b> performance task. Each is designed around the same essential idea the unit builds toward — <i>structure determines function</i> — and each includes differentiation tied to the diverse learners profiled in my SLO 1 classroom snapshot.</p>
+    <div class="note"><b>Privacy note:</b> Any student references (e.g., the focus student “Mateo”) are de-identified composites from my SLO 1 profile, used to show how each assessment is differentiated. No real student is identifiable.</div>
+  </div>
+
+  <!-- ============ DIAGNOSTIC ============ -->
+  <section class="assess" id="diagnostic">
+    <div class="a-head"><span class="badge diag">Diagnostic</span><h2>“What Do You Already Know About Cells?”</h2></div>
+    <p class="meta"><b>When:</b> Day 1, before instruction. <b>Time:</b> ~15 min. <b>Use:</b> Not graded for accuracy — it groups students and targets reteaching. Results set my flexible groups and flag misconceptions to confront in Lessons 1–2.</p>
+    <p class="align"><b>Measures readiness for:</b> MS-LS1-1 (living things are made of cells) and the unit’s core vocabulary, before any of it is taught.</p>
+
+    <div class="panel">
+      <h3>Part A · Quick Probes (circle one)</h3>
+      <div class="q"><p class="stem">1. The smallest unit that is still considered “living” is the…</p>
+        <ul class="choices"><li data-l="A">atom</li><li data-l="B">cell</li><li data-l="C">organ</li><li data-l="D">molecule</li></ul></div>
+      <div class="q"><p class="stem">2. Which of these is made of cells?</p>
+        <ul class="choices"><li data-l="A">a tree</li><li data-l="B">a fish</li><li data-l="C">you</li><li data-l="D">all of these</li></ul></div>
+      <div class="q"><p class="stem">3. Agree or Disagree, then say why in one sentence: <i>“Only animals are made of cells.”</i></p>
+        <div class="frame">I ___ (agree / disagree) because ____________________.</div></div>
+      <div class="q"><p class="stem">4. Agree or Disagree, then say why: <i>“All cells come from other cells that already exist.”</i></p>
+        <div class="frame">I ___ (agree / disagree) because ____________________.</div></div>
+    </div>
+
+    <div class="panel">
+      <h3>Part B · Draw &amp; Label (no words needed to start)</h3>
+      <p>In the box, <b>draw what you think a cell looks like.</b> Label any parts you already know the names of. If you’ve seen one under a microscope, draw what you remember.</p>
+      <p style="border:1.5px dashed var(--teal-line);border-radius:10px;height:120px;margin:.6rem 0;display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-style:italic">[ drawing space ]</p>
+    </div>
+
+    <div class="panel">
+      <h3>Part C · K–W (what I Know / what I Want to know)</h3>
+      <table><tr><th>Something I already KNOW about cells</th><th>Something I WANT to figure out</th></tr>
+      <tr><td style="height:48px"></td><td></td></tr></table>
+    </div>
+
+    <div class="key">
+      <h3>How I use the results</h3>
+      <ul>
+        <li><b>Misconception flags:</b> Items 3–4 target the two most common 7th-grade misconceptions (plants/“non-animals” aren’t cellular; spontaneous generation). Disagreement patterns tell me what to confront directly in the cell-theory lesson.</li>
+        <li><b>Grouping:</b> Part B drawings sort quickly into <i>emerging / developing / secure</i> prior schema, which seeds my Day 2–3 flexible groups.</li>
+        <li><b>No grade:</b> Scored only as complete/incomplete so students answer honestly.</li>
+      </ul>
+    </div>
+
+    <div class="diff">
+      <h3>Differentiation</h3>
+      <dl>
+        <dt>Multiple means of representation/expression (UDL)</dt><dd>The “draw a cell” task lets students who read below grade level — including my focus student <b>Mateo</b> — show prior knowledge without a reading bottleneck. Probes can be read aloud or run via text-to-speech.</dd>
+        <dt>English Learners (SIOP)</dt><dd>Key terms appear with a small picture glossary and Spanish cognates (cell / célula); oral or single-word responses are accepted on Parts A and C.</dd>
+        <dt>IEP/504 &amp; ADHD</dt><dd>Short (15 min), low-stakes, chunked into three small parts; extended time and a quiet-start option available.</dd>
+        <dt>Gifted / secure-prior-knowledge</dt><dd>Stretch prompt: “Name one question scientists still can’t fully answer about cells.”</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ FORMATIVE ============ -->
+  <section class="assess" id="formative">
+    <div class="a-head"><span class="badge form">Formative</span><h2>Organelle Function Check + Self-Rating</h2></div>
+    <p class="meta"><b>When:</b> Mid-unit (end of Lesson 3, “Organelles: Structure &amp; Function”). <b>Time:</b> ~10 min exit ticket. <b>Use:</b> Real-time check that drives next-day small-group reteach and confirms readiness to move to “levels of organization.”</p>
+    <p class="align"><b>Measures progress toward:</b> MS-LS1-2 (parts of a cell contribute to its function) and the “structure determines function” essential question.</p>
+
+    <div class="panel">
+      <h3>Part 1 · Match (word bank provided)</h3>
+      <p><b>Word bank:</b> nucleus · mitochondria · chloroplast · cell membrane · cell wall · ribosome</p>
+      <ol>
+        <li>Controls the cell and stores DNA → __________</li>
+        <li>Releases energy from food (“powerhouse”) → __________</li>
+        <li>Captures sunlight to make food (plants) → __________</li>
+        <li>Controls what enters and leaves the cell → __________</li>
+        <li>Makes proteins → __________</li>
+      </ol>
+    </div>
+
+    <div class="panel">
+      <h3>Part 2 · Structure → Function (CER sentence frame)</h3>
+      <p>Pick <b>one</b> organelle. Explain how its <i>structure</i> helps it do its <i>job</i>.</p>
+      <div class="frame">The <u>&nbsp;(organelle)&nbsp;</u> helps the cell by <u>&nbsp;(function)&nbsp;</u>. I know this because its structure <u>&nbsp;(evidence)&nbsp;</u>.</div>
+    </div>
+
+    <div class="panel">
+      <h3>Part 3 · “Cell City” quick check + confidence</h3>
+      <p>If the cell were a city, the <b>mitochondria</b> would be the ____________ because ____________.</p>
+      <p style="margin-top:.6rem"><b>My confidence right now (circle one):</b> 🟢 I’ve got it · 🟡 almost · 🔴 I need another look</p>
+    </div>
+
+    <div class="key">
+      <h3>Answer key &amp; response plan</h3>
+      <p><b>Part 1:</b> 1 nucleus · 2 mitochondria · 3 chloroplast · 4 cell membrane · 5 ribosome. (Cell wall is the distractor — used to check the plant/animal distinction.)</p>
+      <ul>
+        <li><b>🔴/🟡 students → next-day reteach table</b> with the Frayer cards and a hands-on organelle sort while 🟢 students start the levels-of-organization extension.</li>
+        <li><b>Part 2</b> is scored for reasoning, not vocabulary polish — a correct structure→function link earns full credit even with simple wording.</li>
+      </ul>
+    </div>
+
+    <div class="diff">
+      <h3>Differentiation</h3>
+      <dl>
+        <dt>Scaffolded supports (HLP 15)</dt><dd>Word bank + CER sentence frame remove the recall and syntax load so students are graded on science reasoning. Frames are faded later in the unit.</dd>
+        <dt>Mateo &amp; below-grade readers</dt><dd>May give Part 2 as a 20-second oral recording or by annotating an organelle diagram instead of writing.</dd>
+        <dt>English Learners</dt><dd>Frayer visuals and cognates remain posted; partner talk precedes the written response (comprehensible input + rehearsal).</dd>
+        <dt>Gifted</dt><dd>Stretch: “Choose two organelles and explain how they depend on each other.”</dd>
+        <dt>Metacognition (HLP 14)</dt><dd>The 🟢🟡🔴 self-rating builds self-monitoring and gives me instant grouping data.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ SUMMATIVE ============ -->
+  <section class="assess" id="summative">
+    <div class="a-head"><span class="badge summ">Summative</span><h2>End-of-Unit Cells Assessment</h2></div>
+    <p class="meta"><b>When:</b> End of unit (after Lesson 5). <b>Time:</b> ~45 min. <b>Use:</b> Measures mastery of all unit objectives; the data identify who needs intervention before the next unit (body systems).</p>
+    <p class="align"><b>Measures:</b> AZ 7.L1U1.6 · MS-LS1-1, -2, -3 — organelle function, plant/animal &amp; prokaryote/eukaryote, microscope &amp; scale, levels of organization, and a Claim–Evidence–Reasoning explanation.</p>
+
+    <div class="panel">
+      <h3>Section 1 · Organelles (multiple choice)</h3>
+      <div class="q"><p class="stem">1. Which organelle is found in <b>plant</b> cells but <b>not</b> animal cells and captures light energy?</p>
+        <ul class="choices"><li data-l="A">mitochondria</li><li data-l="B">chloroplast</li><li data-l="C">nucleus</li><li data-l="D">ribosome</li></ul></div>
+      <div class="q"><p class="stem">2. A cell needs to make a lot of protein. Which organelle should it have many of?</p>
+        <ul class="choices"><li data-l="A">vacuoles</li><li data-l="B">ribosomes</li><li data-l="C">cell walls</li><li data-l="D">chloroplasts</li></ul></div>
+    </div>
+
+    <div class="panel">
+      <h3>Section 2 · Compare &amp; Contrast</h3>
+      <p><b>3.</b> Give <b>one</b> difference and <b>one</b> similarity between a <b>prokaryotic</b> and a <b>eukaryotic</b> cell.</p>
+      <p><b>4.</b> Name <b>two</b> structures a plant cell has that an animal cell does <i>not</i>.</p>
+    </div>
+
+    <div class="panel">
+      <h3>Section 3 · Microscope &amp; Scale (math integration)</h3>
+      <p><b>5.</b> A microscope’s eyepiece (ocular) lens is <b>10×</b> and the objective lens is <b>40×</b>. What is the <b>total magnification</b>? Show your work.</p>
+    </div>
+
+    <div class="panel">
+      <h3>Section 4 · Levels of Organization</h3>
+      <p><b>6.</b> Put these in order from <b>smallest to largest</b>: <i>organ, cell, organism, tissue, organ system.</i></p>
+      <p><b>7.</b> Explain in one sentence how a single muscle <b>cell</b> is related to the <b>muscular system</b>.</p>
+    </div>
+
+    <div class="panel">
+      <h3>Section 5 · Constructed Response (Claim–Evidence–Reasoning)</h3>
+      <p><b>8.</b> Answer the essential question: <b>“How does a cell’s structure determine its function?”</b> Use <b>one</b> specific organelle as your example.</p>
+      <div class="frame"><b>Claim:</b> ______. <b>Evidence:</b> The structure of the ______ is ______. <b>Reasoning:</b> This structure lets the cell ______, which shows that structure determines function.</div>
+    </div>
+
+    <div class="key">
+      <h3>Answer key &amp; CER rubric</h3>
+      <p><b>1</b> B · <b>2</b> B · <b>3</b> e.g., difference: prokaryotes lack a nucleus / membrane-bound organelles; similarity: both have a cell membrane, cytoplasm, ribosomes, DNA · <b>4</b> cell wall &amp; chloroplast (also accept large central vacuole) · <b>5</b> 10 × 40 = <b>400×</b> · <b>6</b> cell → tissue → organ → organ system → organism · <b>7</b> muscle cells form muscle tissue, which forms the organs/organ system that move the body.</p>
+      <table>
+        <tr><th>CER level (Item 8)</th><th>Descriptor</th></tr>
+        <tr><td class="lv">4 — Mastery</td><td>Accurate claim; specific structural evidence for the chosen organelle; reasoning explicitly links structure → function.</td></tr>
+        <tr><td class="lv">3 — Proficient</td><td>Correct claim &amp; evidence; reasoning present but general.</td></tr>
+        <tr><td class="lv">2 — Developing</td><td>Claim correct; evidence vague or reasoning missing.</td></tr>
+        <tr><td class="lv">1 — Beginning</td><td>Restates the question or lists a fact without linking structure to function.</td></tr>
+      </table>
+    </div>
+
+    <div class="diff">
+      <h3>Differentiation (access without lowering the target)</h3>
+      <dl>
+        <dt>Representation</dt><dd>Read-aloud / text-to-speech for the whole test; a posted picture-glossary of organelles; key academic verbs (“compare,” “explain”) defined in the margin.</dd>
+        <dt>Expression (Mateo &amp; SLD-reading students)</dt><dd>Item 8 may be completed as a recorded oral CER or a labeled diagram with captions — the science target (structure→function reasoning) is held constant; only the mode of demonstration changes.</dd>
+        <dt>English Learners</dt><dd>Bilingual glossary permitted; sentence frame on Item 8 supplies the academic-language structure.</dd>
+        <dt>IEP/504</dt><dd>Extended time, small-group/quiet setting, and reduced-distractor versions of Section 1 as specified in student plans.</dd>
+        <dt>Gifted</dt><dd>Optional challenge: “Predict what happens to the whole organism if one organelle stops working — trace the effect up the levels of organization.”</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ AUTHENTIC ============ -->
+  <section class="assess" id="authentic">
+    <div class="a-head"><span class="badge auth">Authentic</span><h2>“Design-a-Cell” Analogy Model &amp; Presentation</h2></div>
+    <p class="meta"><b>When:</b> Unit synthesis (Lesson 5), alongside the summative. <b>Format:</b> Performance task with an authentic audience. <b>Use:</b> Students apply the unit’s big idea to a real-world system of their choice and explain it — assessment <i>as</i> learning.</p>
+    <p class="align"><b>Measures:</b> MS-LS1-2 &amp; MS-LS1-3 (a cell as a system of interacting parts) through application, modeling, and oral/visual communication — the deepest evidence of transfer.</p>
+
+    <div class="panel">
+      <h3>The Task</h3>
+      <p>You are a “systems designer.” Choose a real system you know well — a <b>city, factory, school, theme park, restaurant, or sports team</b> — and build a <b>model or labeled diagram</b> that shows how that system is just like a cell. Then <b>present</b> it (live, or as a 2–3 minute recorded video) explaining:</p>
+      <ol>
+        <li>Which part of your system represents each major <b>organelle</b>, and <b>why</b> (match the <i>job</i>, not just the name).</li>
+        <li>How the parts <b>work together as a system</b> — what happens to the whole if one part fails.</li>
+        <li>One way your analogy is <b>not</b> perfect (where the comparison breaks down).</li>
+      </ol>
+      <p>Audience: presented to the class (and shared with a 6th-grade class as “cell experts”).</p>
+    </div>
+
+    <div class="panel">
+      <h3>Planning organizer (scaffold)</h3>
+      <table>
+        <tr><th>Organelle</th><th>Its job in the cell</th><th>My system’s matching part</th><th>Why it matches</th></tr>
+        <tr><td>Nucleus</td><td></td><td></td><td></td></tr>
+        <tr><td>Mitochondria</td><td></td><td></td><td></td></tr>
+        <tr><td>Cell membrane</td><td></td><td></td><td></td></tr>
+        <tr><td>Ribosomes</td><td></td><td></td><td></td></tr>
+        <tr><td>(your choice)</td><td></td><td></td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="key">
+      <h3>Performance Rubric (4-point)</h3>
+      <table>
+        <tr><th>Criterion</th><th>4 — Mastery</th><th>3 — Proficient</th><th>2 — Developing</th><th>1 — Beginning</th></tr>
+        <tr><td class="lv">Science accuracy</td><td>All organelle matches are functionally correct &amp; precise</td><td>Most matches functionally correct</td><td>Some matches by name only, not function</td><td>Major inaccuracies</td></tr>
+        <tr><td class="lv">Structure → function reasoning</td><td>Clearly explains <i>why</i> each match works by job</td><td>Explains most matches</td><td>Describes parts but little reasoning</td><td>Lists parts only</td></tr>
+        <tr><td class="lv">Systems thinking</td><td>Explains interdependence &amp; failure effects across the system</td><td>Notes parts work together</td><td>Mentions one connection</td><td>Treats parts as isolated</td></tr>
+        <tr><td class="lv">Communication</td><td>Clear, organized, engaging; model supports the message</td><td>Clear and organized</td><td>Understandable but uneven</td><td>Hard to follow</td></tr>
+      </table>
+    </div>
+
+    <div class="diff">
+      <h3>Differentiation</h3>
+      <dl>
+        <dt>Interest &amp; choice (Tomlinson)</dt><dd>Students choose the system (sports, gaming, city, restaurant…), which raises engagement and lets cultural and personal background become an asset.</dd>
+        <dt>Multiple means of expression</dt><dd>Model can be physical, drawn, digital (slides), or a diorama; the explanation can be <b>live or recorded</b> — ideal for <b>Mateo</b>, who reasons strongly orally and draws excellent diagrams.</dd>
+        <dt>English Learners</dt><dd>Bilingual labels welcomed; the planning organizer and a rehearsal with a partner provide language support before presenting.</dd>
+        <dt>IEP/504 &amp; ADHD</dt><dd>Organizer chunks the task; defined group roles; checkpoints across two days rather than one open-ended block.</dd>
+        <dt>Gifted</dt><dd>Extension: model a <b>disease or malfunction</b> (e.g., a mitochondria “power outage”) and trace the consequences up the levels of organization.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <footer>
+    <p><b>SLO 3 Assessment Suite</b> · SED 510 — General Methods · Chasity N. Madewell. Built as the artifact for SLO 3 (“Creating Assessments for Intervention and Progress”), continuing the “Cells: The Building Blocks of Life” unit from my SLO 2 Backward Design. All four assessments are aligned to the same standards and objectives and differentiated for the learners profiled in my SLO 1 classroom snapshot.</p>
+  </footer>
+</div>
+
+</body>
+</html>
