@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Summative — End-of-Unit Cells Assessment · SLO 3</title><meta name="description" content="A 45-minute assessment of every unit objective, with answer key and a 4-point CER rubric." /><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800&display=swap" rel="stylesheet"><style>
+  :root{
+    --ink:#1f2a2e; --ink-soft:#4b5b60; --paper:#fbfaf6; --card:#ffffff;
+    --teal:#0f766e; --teal-deep:#0b5750; --teal-tint:#e6f4f1; --teal-line:#bfe3dc;
+    --gold:#b8842b; --gold-tint:#fbf2dd;
+    --rule:#e4e1d6; --shadow:0 14px 34px -20px rgba(15,60,55,.45);
+    --display:"Fraunces",Georgia,serif; --body:"Nunito Sans",system-ui,-apple-system,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; scroll-padding-top:84px}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.6;
+       -webkit-font-smoothing:antialiased}
+  .wrap{max-width:920px;margin:0 auto;padding:0 clamp(1rem,4vw,2.2rem)}
+
+  /* header */
+  header.masthead{
+    background:linear-gradient(150deg,var(--teal-deep),var(--teal) 70%);color:#eafdf9;
+    padding:clamp(2rem,5vw,3.4rem) 0 clamp(1.6rem,4vw,2.6rem);position:relative;overflow:hidden;
+  }
+  header.masthead::after{content:"";position:absolute;right:-60px;top:-60px;width:280px;height:280px;border-radius:50%;
+    background:radial-gradient(circle at 40% 40%,rgba(255,255,255,.16),transparent 60%);}
+  .kicker{font-weight:800;letter-spacing:.22em;text-transform:uppercase;font-size:.72rem;color:#a9ede1}
+  header.masthead h1{font-family:var(--display);font-weight:900;font-size:clamp(1.9rem,5vw,3rem);
+    line-height:1.02;margin:.5rem 0 .3rem;font-optical-sizing:auto}
+  header.masthead h1 em{font-style:italic;color:#ffe6b3}
+  .byline{font-size:.98rem;opacity:.94;font-weight:600}
+  .standards{margin-top:1rem;font-size:.82rem;background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:.7rem .9rem;display:inline-block;max-width:100%}
+  .standards b{color:#ffe6b3}
+
+  /* contents nav */
+  nav.toc{position:sticky;top:0;z-index:10;background:rgba(251,250,246,.92);backdrop-filter:saturate(1.2);
+    border-bottom:1px solid var(--rule)}
+  nav.toc .wrap{display:flex;gap:.4rem;flex-wrap:wrap;padding-top:.6rem;padding-bottom:.6rem;align-items:center}
+  nav.toc a{font-weight:700;font-size:.82rem;color:var(--teal-deep);text-decoration:none;
+    padding:.34rem .7rem;border-radius:999px;border:1px solid var(--teal-line);background:var(--teal-tint);transition:.15s}
+  nav.toc a:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+  nav.toc .lead{font-weight:800;color:var(--ink-soft);font-size:.74rem;text-transform:uppercase;letter-spacing:.12em;margin-right:.2rem}
+
+  .intro{padding:1.6rem 0 .4rem}
+  .intro p{color:var(--ink-soft);max-width:64ch}
+  .note{font-size:.82rem;color:var(--ink-soft);background:var(--gold-tint);border-left:4px solid var(--gold);
+    border-radius:0 10px 10px 0;padding:.7rem .9rem;margin:1rem 0}
+
+  /* assessment sections */
+  section.assess{padding:2.2rem 0 1rem;border-top:1px solid var(--rule);margin-top:1.4rem}
+  .a-head{display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap}
+  .badge{font-family:var(--body);font-weight:800;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;
+    color:#fff;background:var(--teal);padding:.28rem .6rem;border-radius:6px;white-space:nowrap}
+  .badge.diag{background:#2563eb}.badge.form{background:#0f766e}.badge.summ{background:#7c3a9a}.badge.auth{background:#b8842b}
+  section.assess h2{font-family:var(--display);font-weight:900;font-size:clamp(1.4rem,3.6vw,2rem);margin:.1rem 0;color:var(--ink)}
+  .meta{font-size:.86rem;color:var(--ink-soft);margin:.5rem 0 0}
+  .meta b{color:var(--teal-deep)}
+  .align{font-size:.8rem;color:var(--ink-soft);margin:.35rem 0 1rem;padding:.5rem .8rem;background:#f1f4f1;border-radius:8px}
+
+  .panel{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:1.1rem 1.3rem;margin:1rem 0;box-shadow:var(--shadow)}
+  .panel h3{font-family:var(--body);font-weight:800;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--teal-deep);margin:.1rem 0 .7rem;display:flex;align-items:center;gap:.5rem}
+  .panel h3::before{content:"";width:18px;height:3px;border-radius:2px;background:var(--teal)}
+  ol,ul{margin:.4rem 0 .4rem;padding-left:1.3rem}
+  li{margin:.34rem 0}
+  .q{margin:.7rem 0;padding-left:.2rem}
+  .q .stem{font-weight:700}
+  .choices{list-style:none;padding-left:.2rem;margin:.3rem 0}
+  .choices li{margin:.18rem 0}
+  .choices li::before{content:attr(data-l)") ";font-weight:800;color:var(--teal-deep);margin-right:.3rem}
+  .frame{font-family:var(--body);background:#f6f8f7;border:1px dashed var(--teal-line);border-radius:8px;
+    padding:.45rem .7rem;margin:.4rem 0;font-style:italic;color:var(--ink-soft)}
+  .key{background:var(--teal-tint);border:1px solid var(--teal-line);border-radius:12px;padding:.9rem 1.1rem;margin:1rem 0}
+  .key h3{color:var(--teal-deep)}
+  .diff{background:#fff8ec;border:1px solid #f0dcb0;border-radius:12px;padding:.9rem 1.1rem;margin:1rem 0}
+  .diff h3{color:var(--gold)}
+  .diff h3::before{background:var(--gold)}
+  .diff dl{margin:.2rem 0}
+  .diff dt{font-weight:800;color:#8a6420;margin-top:.5rem}
+  .diff dd{margin:.1rem 0 0 0}
+
+  table{border-collapse:collapse;width:100%;margin:.6rem 0;font-size:.86rem}
+  th,td{border:1px solid var(--rule);padding:.5rem .6rem;text-align:left;vertical-align:top}
+  th{background:var(--teal-tint);color:var(--teal-deep);font-weight:800;font-size:.78rem}
+  td.lv{font-weight:800;color:var(--teal-deep);white-space:nowrap;background:#f7faf9}
+
+  footer{margin:3rem 0 2rem;padding-top:1.2rem;border-top:1px solid var(--rule);font-size:.8rem;color:var(--ink-soft)}
+
+  @media print{
+    nav.toc{display:none} header.masthead{color:#08312c;background:#fff;border-bottom:2px solid var(--teal)}
+    header.masthead h1 em{color:var(--gold)} .panel,.key,.diff{box-shadow:none}
+    section.assess{break-inside:avoid-page} body{background:#fff}
+  }
+</style><style>nav.toc a.active{background:var(--teal);color:#fff;border-color:var(--teal)}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin:1.4rem 0}.card{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:1.1rem 1.2rem;box-shadow:var(--shadow);transition:.15s}.card:hover{transform:translateY(-3px);border-color:var(--teal-line)}.card .badge{margin-bottom:.5rem;display:inline-block}.card h3{font-family:var(--display);font-weight:700;font-size:1.15rem;margin:.2rem 0 .35rem;color:var(--ink)}.card p{font-size:.86rem;color:var(--ink-soft);margin:0}.card .go{margin-top:.6rem;font-weight:800;font-size:.8rem;color:var(--teal-deep)}.pagenav{display:flex;justify-content:space-between;gap:1rem;margin:2rem 0 0;font-weight:700;font-size:.9rem}.pagenav a{color:var(--teal-deep);text-decoration:none;padding:.5rem .9rem;border:1px solid var(--teal-line);border-radius:999px;background:var(--teal-tint)}.pagenav a:hover{background:var(--teal);color:#fff}.pagenav span{opacity:.4}</style></head><body><header class="masthead"><div class="wrap"><p class="kicker">SED 510 · General Methods · SLO 3 Artifact · Summative</p><h1>Assessment Suite — <em>Cells: The Building Blocks of Life</em></h1><p class="byline">Chasity N. Madewell · 7th-Grade Life Science · American Leadership Academy</p><div class="standards"><b>Aligned to:</b> AZ Science Standard 7.L1U1.6 · NGSS MS-LS1-1, MS-LS1-2, MS-LS1-3 — and the unit objectives from my SLO 2 Backward Design.</div></div></header><nav class="toc"><div class="wrap"><span class="lead">SLO 3 Assessments</span><a href="../">Suite home</a><a href="../diagnostic/">Diagnostic</a><a href="../formative/">Formative</a><a href="../summative/" class="active">Summative</a><a href="../authentic/">Authentic</a></div></nav><div class="wrap"><section class="assess" id="summative"><div class="a-head"><span class="badge summ">Summative</span><h2>End-of-Unit Cells Assessment</h2></div>
+    <p class="meta"><b>When:</b> End of unit (after Lesson 5). <b>Time:</b> ~45 min. <b>Use:</b> Measures mastery of all unit objectives; the data identify who needs intervention before the next unit (body systems).</p>
+    <p class="align"><b>Measures:</b> AZ 7.L1U1.6 · MS-LS1-1, -2, -3 — organelle function, plant/animal &amp; prokaryote/eukaryote, microscope &amp; scale, levels of organization, and a Claim–Evidence–Reasoning explanation.</p>
+
+    <div class="panel">
+      <h3>Section 1 · Organelles (multiple choice)</h3>
+      <div class="q"><p class="stem">1. Which organelle is found in <b>plant</b> cells but <b>not</b> animal cells and captures light energy?</p>
+        <ul class="choices"><li data-l="A">mitochondria</li><li data-l="B">chloroplast</li><li data-l="C">nucleus</li><li data-l="D">ribosome</li></ul></div>
+      <div class="q"><p class="stem">2. A cell needs to make a lot of protein. Which organelle should it have many of?</p>
+        <ul class="choices"><li data-l="A">vacuoles</li><li data-l="B">ribosomes</li><li data-l="C">cell walls</li><li data-l="D">chloroplasts</li></ul></div>
+    </div>
+
+    <div class="panel">
+      <h3>Section 2 · Compare &amp; Contrast</h3>
+      <p><b>3.</b> Give <b>one</b> difference and <b>one</b> similarity between a <b>prokaryotic</b> and a <b>eukaryotic</b> cell.</p>
+      <p><b>4.</b> Name <b>two</b> structures a plant cell has that an animal cell does <i>not</i>.</p>
+    </div>
+
+    <div class="panel">
+      <h3>Section 3 · Microscope &amp; Scale (math integration)</h3>
+      <p><b>5.</b> A microscope’s eyepiece (ocular) lens is <b>10×</b> and the objective lens is <b>40×</b>. What is the <b>total magnification</b>? Show your work.</p>
+    </div>
+
+    <div class="panel">
+      <h3>Section 4 · Levels of Organization</h3>
+      <p><b>6.</b> Put these in order from <b>smallest to largest</b>: <i>organ, cell, organism, tissue, organ system.</i></p>
+      <p><b>7.</b> Explain in one sentence how a single muscle <b>cell</b> is related to the <b>muscular system</b>.</p>
+    </div>
+
+    <div class="panel">
+      <h3>Section 5 · Constructed Response (Claim–Evidence–Reasoning)</h3>
+      <p><b>8.</b> Answer the essential question: <b>“How does a cell’s structure determine its function?”</b> Use <b>one</b> specific organelle as your example.</p>
+      <div class="frame"><b>Claim:</b> ______. <b>Evidence:</b> The structure of the ______ is ______. <b>Reasoning:</b> This structure lets the cell ______, which shows that structure determines function.</div>
+    </div>
+
+    <div class="key">
+      <h3>Answer key &amp; CER rubric</h3>
+      <p><b>1</b> B · <b>2</b> B · <b>3</b> e.g., difference: prokaryotes lack a nucleus / membrane-bound organelles; similarity: both have a cell membrane, cytoplasm, ribosomes, DNA · <b>4</b> cell wall &amp; chloroplast (also accept large central vacuole) · <b>5</b> 10 × 40 = <b>400×</b> · <b>6</b> cell → tissue → organ → organ system → organism · <b>7</b> muscle cells form muscle tissue, which forms the organs/organ system that move the body.</p>
+      <table>
+        <tr><th>CER level (Item 8)</th><th>Descriptor</th></tr>
+        <tr><td class="lv">4 — Mastery</td><td>Accurate claim; specific structural evidence for the chosen organelle; reasoning explicitly links structure → function.</td></tr>
+        <tr><td class="lv">3 — Proficient</td><td>Correct claim &amp; evidence; reasoning present but general.</td></tr>
+        <tr><td class="lv">2 — Developing</td><td>Claim correct; evidence vague or reasoning missing.</td></tr>
+        <tr><td class="lv">1 — Beginning</td><td>Restates the question or lists a fact without linking structure to function.</td></tr>
+      </table>
+    </div>
+
+    <div class="diff">
+      <h3>Differentiation (access without lowering the target)</h3>
+      <dl>
+        <dt>Representation</dt><dd>Read-aloud / text-to-speech for the whole test; a posted picture-glossary of organelles; key academic verbs (“compare,” “explain”) defined in the margin.</dd>
+        <dt>Expression (Mateo &amp; SLD-reading students)</dt><dd>Item 8 may be completed as a recorded oral CER or a labeled diagram with captions — the science target (structure→function reasoning) is held constant; only the mode of demonstration changes.</dd>
+        <dt>English Learners</dt><dd>Bilingual glossary permitted; sentence frame on Item 8 supplies the academic-language structure.</dd>
+        <dt>IEP/504</dt><dd>Extended time, small-group/quiet setting, and reduced-distractor versions of Section 1 as specified in student plans.</dd>
+        <dt>Gifted</dt><dd>Optional challenge: “Predict what happens to the whole organism if one organelle stops working — trace the effect up the levels of organization.”</dd>
+      </dl>
+    </div></section><div class="pagenav"><a href="../formative/">← Formative</a><a href="../">All four assessments</a><a href="../authentic/">Authentic →</a></div><footer><p><b>SLO 3 Assessment Suite</b> · SED 510 — General Methods · Chasity N. Madewell. One of four aligned assessments for the “Cells: The Building Blocks of Life” unit, continuing my SLO 2 Backward Design and differentiated for the learners profiled in my SLO 1 classroom snapshot.</p></footer></div></body></html>
